@@ -39,7 +39,7 @@ function Lab1() {
 
     return (
         <Layout style={{ minHeight: "100vh" }}>
-            {/* Sidebar */}
+
             <Sider style={{ color: "white", padding: 20 }}>
                 <h3>Sidebar</h3>
                 <p>Dashboard</p>
@@ -47,12 +47,12 @@ function Lab1() {
             </Sider>
 
             <Layout>
-                {/* Header */}
+
                 <Header style={{ color: "white" }}>
                     <h2 style={{ color: "white" }}>Header</h2>
                 </Header>
 
-                {/* Content */}
+
                 <Content style={{ padding: 20 }}>
                     <div>
                         <h2>Form đăng ký</h2>
@@ -89,7 +89,6 @@ function Lab1() {
                     </div>
                 </Content>
 
-                {/* Footer */}
                 <Footer style={{ textAlign: "center" }}>Lab1 React Antd</Footer>
             </Layout>
         </Layout>
