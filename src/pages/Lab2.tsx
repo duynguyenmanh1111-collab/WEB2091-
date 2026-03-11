@@ -12,9 +12,9 @@ function Lab2() {
         {
             key: "2",
             id: 2,
-            name: "Trần Nam",
+            name: "Nguyễn Văn B",
             age: 21,
-            major: "Software Engineering",
+            major: "Quản trị kinh doanh",
         },
     ];
 

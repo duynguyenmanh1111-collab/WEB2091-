@@ -15,22 +15,30 @@ function List() {
       id: 1,
       name: "Nguyễn Duy",
       age: 20,
-      major: "Information Technology",
+      major: "IT",
     },
     {
       key: "2",
       id: 2,
-      name: "Trần Nam",
+      name: "Nguyễn Văn B",
       age: 21,
-      major: "Software Engineering",
+      major: "Quản trị kinh doanh",
     },
     {
       key: "3",
       id: 3,
-      name: "Lê Minh",
-      age: 22,
-      major: "Computer Science",
+      name: "Trần Văn A",
+      age: 19,
+      major: "Thiết kế đồ họa",
     },
+    {
+      key: "4",
+      id: 4,
+      name: "Lê Văn C",
+      age: 22,
+      major: "Nhà hàng khách sạn",
+    },
+
   ];
 
   const columns = [
