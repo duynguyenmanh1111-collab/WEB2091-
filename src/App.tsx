@@ -1,75 +1,12 @@
 import { Toaster } from "react-hot-toast";
 import { Link, Routes, Route } from "react-router-dom";
-import { Layout, Table } from "antd";
+import { Layout } from "antd";
+import Lab2 from "./pages/Lab2";
 
 const { Header, Content, Footer } = Layout;
 
 function Home() {
   return <h2>Trang chủ</h2>;
-}
-
-function List() {
-  const data = [
-    {
-      key: "1",
-      id: 1,
-      name: "Nguyễn Duy",
-      age: 20,
-      major: "IT",
-    },
-    {
-      key: "2",
-      id: 2,
-      name: "Nguyễn Văn B",
-      age: 21,
-      major: "Quản trị kinh doanh",
-    },
-    {
-      key: "3",
-      id: 3,
-      name: "Trần Văn A",
-      age: 19,
-      major: "Thiết kế đồ họa",
-    },
-    {
-      key: "4",
-      id: 4,
-      name: "Lê Văn C",
-      age: 22,
-      major: "Nhà hàng khách sạn",
-    },
-
-  ];
-
-  const columns = [
-    {
-      title: "ID",
-      dataIndex: "id",
-    },
-    {
-      title: "Name",
-      dataIndex: "name",
-    },
-    {
-      title: "Age",
-      dataIndex: "age",
-    },
-    {
-      title: "Major",
-      dataIndex: "major",
-    },
-  ];
-
-  return (
-    <>
-      <h2>Student List</h2>
-      <Table dataSource={data} columns={columns} />
-    </>
-  );
-}
-
-function Add() {
-  return <h2>Trang thêm mới</h2>;
 }
 
 function App() {
@@ -81,10 +18,9 @@ function App() {
             <strong>WEB2091 App</strong>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="space-x-8">
             <Link to="/">Trang chủ</Link>
             <Link to="/list">Danh sách</Link>
-            <Link to="/add">Thêm mới</Link>
           </div>
         </div>
       </nav>
@@ -96,13 +32,12 @@ function App() {
           <Content style={{ padding: 20 }}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/list" element={<List />} />
-              <Route path="/add" element={<Add />} />
+              <Route path="/list" element={<Lab2 />} />
             </Routes>
           </Content>
 
           <Footer style={{ textAlign: "center" }}>
-            WEB2091 ©2026 Created by Student
+            WEB2091 ©2026
           </Footer>
         </Layout>
       </div>
