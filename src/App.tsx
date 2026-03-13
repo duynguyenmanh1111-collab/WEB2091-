@@ -3,7 +3,6 @@ import { Link, Routes, Route, Navigate } from "react-router-dom";
 import Lab2 from "./pages/Lab2";
 import Lab3 from "./pages/Lab3";
 
-
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -13,7 +12,6 @@ function App() {
           <Link to="/" className="text-xl font-bold tracking-tight">
             WEB2091 APP
           </Link>
-
 
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="hover:text-blue-200 transition-colors">
@@ -27,7 +25,6 @@ function App() {
             </Link>
           </div>
 
-
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/login" className="hover:text-blue-200 transition-colors">
               Đăng nhập
@@ -39,7 +36,6 @@ function App() {
         </div>
       </nav>
 
-
       <main className="max-w-6xl mx-auto mt-8 p-6 bg-white shadow-sm rounded-xl">
         <Routes>
 
@@ -50,19 +46,18 @@ function App() {
                 <h1 className="text-4xl font-extrabold text-gray-800 mb-4">
                   Chào mừng đến với WEB2091
                 </h1>
-                <div className="mt-8">
-                </div>
               </div>
             }
           />
-          <Route path="/list" element={<Lab2 />} />
-          <Route path="/add" element={<Lab3 />} />
-          <Route
-            path="/add"
 
-          />
+          <Route path="/list" element={<Lab2 />} />
+
+          <Route path="/add" element={<Lab3 mode="product" />} />
+
+          <Route path="/login" element={<Lab3 mode="login" />} />
 
           <Route path="*" element={<Navigate to="/" replace />} />
+
         </Routes>
       </main>
 

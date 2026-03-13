@@ -1,9 +1,8 @@
 import { Form, Input, Button, List, Card } from "antd";
 import { useState } from "react";
 
-const Lab3 = () => {
+const Lab3 = ({ mode }: any) => {
     const [products, setProducts] = useState<any[]>([]);
-    const [page, setPage] = useState("product");
 
     const onLogin = (values: any) => {
         console.log("Login:", values);
@@ -21,17 +20,7 @@ const Lab3 = () => {
     return (
         <div style={{ padding: 40 }}>
 
-            <div style={{ marginBottom: 20 }}>
-                <Button onClick={() => setPage("login")} style={{ marginRight: 10 }}>
-                    Đăng nhập
-                </Button>
-
-                <Button type="primary" onClick={() => setPage("product")}>
-                    Thêm mới
-                </Button>
-            </div>
-
-            {page === "login" && (
+            {mode === "login" && (
                 <Card title="Login Form" style={{ maxWidth: 400 }}>
                     <Form layout="vertical" onFinish={onLogin}>
                         <Form.Item
@@ -57,7 +46,7 @@ const Lab3 = () => {
                 </Card>
             )}
 
-            {page === "product" && (
+            {mode === "product" && (
                 <>
                     <Card title="Thêm sản phẩm" style={{ marginBottom: 30, maxWidth: 400 }}>
                         <Form layout="vertical" onFinish={onAddProduct}>
