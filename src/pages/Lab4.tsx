@@ -12,7 +12,7 @@ export default function StoryForm() {
             toast.error("loi api roi");
         },
         onSuccess: () => {
-            toast.success("thanh cong roi ae oi!");
+            toast.success("thanh cong!");
         },
     });
     const onFinish = async (values: any) => {
