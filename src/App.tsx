@@ -2,6 +2,7 @@ import { Toaster } from "react-hot-toast";
 import { Link, Routes, Route, Navigate } from "react-router-dom";
 import Lab2 from "./pages/Lab2";
 import Lab3 from "./pages/Lab3";
+import Lab4 from "./pages/Lab4";
 
 function App() {
   return (
@@ -57,6 +58,8 @@ function App() {
           <Route path="/login" element={<Lab3 mode="login" />} />
 
           <Route path="*" element={<Navigate to="/" replace />} />
+
+          <Route path="/lab4" element={<Lab4 />} />
 
         </Routes>
       </main>
