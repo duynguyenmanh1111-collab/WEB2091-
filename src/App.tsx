@@ -3,6 +3,7 @@ import { Link, Routes, Route, Navigate } from "react-router-dom";
 import Lab2 from "./pages/Lab2";
 import Lab3 from "./pages/Lab3";
 import Lab4 from "./pages/Lab4";
+import Lab5 from "./pages/Lab5";
 
 function App() {
   return (
@@ -60,6 +61,8 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
 
           <Route path="/lab4" element={<Lab4 />} />
+
+          <Route path="/lab5" element={<Lab5 />} />
 
         </Routes>
       </main>

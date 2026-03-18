@@ -1,25 +1,76 @@
 {
   "stories": [
     {
-      "title": "Naruto",
-      "author": "khong biet ten tac gia",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSijajcNub-_0abpb6EueY2tvePT7SS-6wbWlmjxuOOJvovcp1lCjLatK6mwIqrr5TbXpn4W1vbg3QZldRAS1iTiGFCp3niuklnUV4CUCM&s=10",
-      "description": "truyen nay hay lam nhung t chua doc dau",
-      "id": 1
+      "title": "shin",
+      "author": "quên tên tác giả",
+      "category": "hot",
+      "image": "https://th.bing.com/th?q=B%c3%aca+Truy%e1%bb%87n+Shin+C%e1%ba%adu+B%c3%a9+B%c3%bat+Ch%c3%ac&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "description": "f",
+      "createdAt": "2026-03-18T08:41:28.226Z",
+      "id": 3
+    },
+    {
+      "title": "1",
+      "author": "quên tên tác giả",
+      "category": "horror",
+      "image": "https://th.bing.com/th?q=B%c3%aca+Truy%e1%bb%87n+Shin+C%e1%ba%adu+B%c3%a9+B%c3%bat+Ch%c3%ac&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "description": "c",
+      "createdAt": "2026-03-18T08:47:27.876Z",
+      "id": 4
+    },
+    {
+      "title": "1",
+      "author": "quên tên tác giả",
+      "category": "horror",
+      "image": "https://th.bing.com/th?q=B%c3%aca+Truy%e1%bb%87n+Shin+C%e1%ba%adu+B%c3%a9+B%c3%bat+Ch%c3%ac&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "description": "c",
+      "createdAt": "2026-03-18T08:47:31.447Z",
+      "id": 5
     },
     {
       "title": "ff",
-      "author": "hh",
-      "image": "http://localhost:3000/stories",
-      "description": "fggg",
-      "id": 2
+      "author": "quên tên tác giả",
+      "category": "comedy",
+      "image": "https://th.bing.com/th?q=B%c3%aca+Truy%e1%bb%87n+Shin+C%e1%ba%adu+B%c3%a9+B%c3%bat+Ch%c3%ac&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "description": "f",
+      "createdAt": "2026-03-18T08:50:20.418Z",
+      "id": 6
     },
     {
-      "title": "Ty Quay",
-      "author": "Dao Hai",
-      "image": "http://localhost:3000/stories",
-      "description": "hay",
-      "id": 3
+      "title": "ff",
+      "author": "quên tên tác giả",
+      "category": "comedy",
+      "image": "https://th.bing.com/th?q=B%c3%aca+Truy%e1%bb%87n+Shin+C%e1%ba%adu+B%c3%a9+B%c3%bat+Ch%c3%ac&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "description": "f",
+      "createdAt": "2026-03-18T08:50:20.932Z",
+      "id": 7
+    },
+    {
+      "title": "ff",
+      "author": "quên tên tác giả",
+      "category": "comedy",
+      "image": "https://th.bing.com/th?q=B%c3%aca+Truy%e1%bb%87n+Shin+C%e1%ba%adu+B%c3%a9+B%c3%bat+Ch%c3%ac&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "description": "f",
+      "createdAt": "2026-03-18T08:50:21.382Z",
+      "id": 8
+    },
+    {
+      "title": "ff",
+      "author": "quên tên tác giả",
+      "category": "comedy",
+      "image": "https://th.bing.com/th?q=B%c3%aca+Truy%e1%bb%87n+Shin+C%e1%ba%adu+B%c3%a9+B%c3%bat+Ch%c3%ac&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "description": "f",
+      "createdAt": "2026-03-18T08:50:21.839Z",
+      "id": 9
+    },
+    {
+      "title": "ff",
+      "author": "quên tên tác giả",
+      "category": "comedy",
+      "image": "https://th.bing.com/th?q=B%c3%aca+Truy%e1%bb%87n+Shin+C%e1%ba%adu+B%c3%a9+B%c3%bat+Ch%c3%ac&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "description": "f",
+      "createdAt": "2026-03-18T08:50:22.270Z",
+      "id": 10
     }
   ],
   "categories": [],
