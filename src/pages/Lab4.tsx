@@ -9,10 +9,10 @@ export default function StoryForm() {
             await axios.post("http://localhost:3000/stories", values);
         },
         onError: () => {
-            toast.error("loi api roi");
+            toast.error("ERROR!!!!");
         },
         onSuccess: () => {
-            toast.success("thanh cong!");
+            toast.success("SUCCESS!!!!");
         },
     });
     const onFinish = async (values: any) => {
