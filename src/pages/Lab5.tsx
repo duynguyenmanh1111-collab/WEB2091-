@@ -34,20 +34,25 @@ export default function StoryList() {
 
     const columns = [
         {
-            title: "Ten truyen",
+            title: "STT",
+            key: "stt",
+            render: (_text: any, _record: any, index: number) => index + 1,
+        },
+        {
+            title: "Tên Truyện",
             dataIndex: "title",
         },
         {
-            title: "Tac gia",
+            title: "Tác giả",
             dataIndex: "author",
         },
         {
-            title: "Hinh anh",
+            title: "Hình ảnh",
             dataIndex: "image",
             render: (src: string) => <Image src={src} height={100} />,
         },
         {
-            title: "Ngay Thang",
+            title: "Ngày Tháng",
             dataIndex: "createdAt",
             render: (date: string) => {
                 const d = new Date(date);
@@ -58,7 +63,7 @@ export default function StoryList() {
             },
         },
         {
-            title: "Action",
+            title: "Hành động",
             render: (_: any, record: any) => (
                 <Popconfirm
                     title="Delete the story"
@@ -67,7 +72,7 @@ export default function StoryList() {
                     cancelText="No"
                     onConfirm={() => mutate(record.id)}
                 >
-                    <Button danger>Delete</Button>
+                    <Button danger>Xóa Truyện</Button>
                 </Popconfirm>
             ),
         },

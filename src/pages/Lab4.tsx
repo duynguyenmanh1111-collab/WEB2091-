@@ -45,6 +45,7 @@ export default function StoryForm() {
                         { label: "Truyện hot", value: "hot" },
                         { label: "Truyện hài", value: "comedy" },
                         { label: "Truyện kinh dị", value: "horror" },
+                        { label: "Truyện Việt Nam", value: "vietnam" },
                     ]}
                 />
             </Form.Item>
