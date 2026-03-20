@@ -22,7 +22,7 @@ export default function StoryList() {
             await axios.delete(`http://localhost:3000/stories/${id}`);
         },
         onSuccess: () => {
-            toast.success("Xoa truyen thanh cong");
+            toast.success("xóa truyện thành công");
             qc.invalidateQueries({ queryKey: ["stories"] });
         },
     });
@@ -67,13 +67,14 @@ export default function StoryList() {
             render: (_: any, record: any) => (
                 <Popconfirm
                     title="Delete the story"
-                    description="Are you sure to delete this story?"
+                    description="Bạn có chắc chắn muốn xóa truyện này ?"
                     okText="Yes"
                     cancelText="No"
                     onConfirm={() => mutate(record.id)}
                 >
                     <Button danger>Xóa Truyện</Button>
-                </Popconfirm>
+                    <Button type="primary">Edit</Button>
+                </Popconfirm >
             ),
         },
     ];
@@ -86,7 +87,7 @@ export default function StoryList() {
         <>
 
             <Input
-                placeholder="Tìm kiếm theo tên truyện..."
+                placeholder="Tìm kiếm "
                 style={{ marginBottom: 16, width: 300 }}
                 onChange={(e) => setSearch(e.target.value)}
             />

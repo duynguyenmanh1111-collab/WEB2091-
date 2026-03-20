@@ -4,6 +4,8 @@ import Lab2 from "./pages/Lab2";
 import Lab3 from "./pages/Lab3";
 import Lab4 from "./pages/Lab4";
 import Lab5 from "./pages/Lab5";
+import { EditStory } from "./pages/Lab6";
+
 
 function App() {
   return (
@@ -63,6 +65,10 @@ function App() {
           <Route path="/lab4" element={<Lab4 />} />
 
           <Route path="/lab5" element={<Lab5 />} />
+
+          <Route path="/lab6/:id" element={<EditStory />} />
+
+
 
         </Routes>
       </main>

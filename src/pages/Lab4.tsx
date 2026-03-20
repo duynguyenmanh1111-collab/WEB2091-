@@ -19,7 +19,7 @@ export default function StoryForm() {
     const onFinish = async (values: any) => {
         console.log("Success:", values);
 
-        // ✅ CHỈ THÊM DÒNG NÀY (không sửa code cũ)
+
         const newValues = {
             ...values,
             createdAt: new Date().toISOString(),
