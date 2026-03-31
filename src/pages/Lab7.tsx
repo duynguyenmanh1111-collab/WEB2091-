@@ -91,8 +91,8 @@ export default function Lab7() {
                     <AppHeader />
 
                     <Content style={{ padding: 20 }}>
-                        <h1>Welcome to Lab 7 🚀</h1>
-                        <p>Thử login / logout và toggle theme nhé!</p>
+                        <h1>Welcome to Lab 7 </h1>
+
                     </Content>
                 </Layout>
             </UserContext.Provider>
