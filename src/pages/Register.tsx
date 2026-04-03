@@ -16,7 +16,7 @@ export default function Register() {
         },
 
         onSuccess: (data: any) => {
-            // 🔥 auto login sau khi register
+
             setUser({
                 name: data.user.username,
                 avatar: "",
