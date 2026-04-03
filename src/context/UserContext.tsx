@@ -1,27 +1,23 @@
-import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useState } from "react";
+// context API chua state global: user
 
-export type User = {
+import { createContext, useState } from "react";
+
+type User = {
     name: string;
-    avatar: string;
 };
 
 type UserContextType = {
     user: User | null;
-    setUser: Dispatch<SetStateAction<User | null>>;
+    setUser: (user: User | null) => void;
 };
 
-const UserContext = createContext<UserContextType | undefined>(undefined);
+export const UserContext = createContext<UserContextType | null>(null);
 
-export function UserProvider({ children }: { children: ReactNode }) {
-    const [user, setUser] = useState<User | null>(null);
-
-    return <UserContext.Provider value={{ user, setUser }}>{children}</UserContext.Provider>;
-}
-
-export function useUser() {
-    const context = useContext(UserContext);
-    if (!context) {
-        throw new Error("useUser must be used inside UserProvider");
-    }
-    return context;
-}
+export const UserProvider = ({ children }: { children: any }) => {
+    const [user, setUser] = useState<User | null>({ name: "hoadv" });
+    return (
+        <UserContext.Provider value={{ user, setUser }}>
+            {children}
+        </UserContext.Provider>
+    );
+};

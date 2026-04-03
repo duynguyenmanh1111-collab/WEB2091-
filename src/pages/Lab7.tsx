@@ -89,11 +89,6 @@ export default function Lab7() {
             <UserContext.Provider value={{ user, setUser }}>
                 <Layout style={{ minHeight: "100vh" }}>
                     <AppHeader />
-
-                    <Content style={{ padding: 20 }}>
-                        <h1>Welcome to Lab 7 </h1>
-
-                    </Content>
                 </Layout>
             </UserContext.Provider>
         </ThemeContext.Provider>
